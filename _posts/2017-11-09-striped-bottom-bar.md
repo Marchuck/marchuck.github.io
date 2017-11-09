@@ -32,9 +32,8 @@ See [StripedTabsActivity](https://github.com/Marchuck/BottomBar/blob/feature/str
 
 
 
-Here's the result:
+[Here's the result](https://github.com/Marchuck/marchuck.github.io/blob/master/assets/nov/bottom_bar_stripes.gif)
 
-<img src="https://github.com/Marchuck/marchuck.github.io/blob/master/assets/nov/bottom_bar_stripes.gif" width="30%" />
 
 Do you like this? Don't forget to star or fork :)
 

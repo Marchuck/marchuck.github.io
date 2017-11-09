@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Android BottomBar with stripes</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+  </head>
+
+
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<!-- <li><a href="/cv">CV</a></li> -->
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
+
+  <h1>Android BottomBar with stripes</h1>
+<p class="meta">09 Nov 2017</p>
+
+<div class="post">
+  <p>Well. Recently I was asked to design bottom navigation on Android. However it smells like iOS pattern, and most of my colleagues are more likely to NOT follow iOS principles, I hadn’t had conscience.
+I quickly found cool library for my use-case</p>
+
+<p><a href="https://github.com/roughike/BottomBar">BottomBar</a></p>
+
+<p>I faced a few obstacles during development, but learned how library works underneath. One of the most curious part was parsing the tabs defined at <code class="highlighter-rouge">(res/xml/bottombar_tabs.xml)</code> where I was able to define stripeColor:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;tabs&gt;</span>
+    <span class="nt">&lt;tab</span>
+        <span class="na">stripeColor=</span><span class="s">"#7c4dff"</span>
+        <span class="na">icon=</span><span class="s">"@drawable/ic_recents"</span>
+        <span class="na">id=</span><span class="s">"@+id/tab_recents"</span>
+        <span class="na">title=</span><span class="s">"Recents"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;tab</span>
+        <span class="na">stripeColor=</span><span class="s">"#e53935"</span>
+        <span class="na">icon=</span><span class="s">"@drawable/ic_favorites"</span>
+        <span class="na">id=</span><span class="s">"@+id/tab_favorites"</span>
+        <span class="na">title=</span><span class="s">"Favorites"</span><span class="nt">/&gt;</span>
+        ...
+</code></pre></div></div>
+
+<p>Bonus: I’ve added custom callback in order to customize <code class="highlighter-rouge">BottomBar</code> stripe enter and exit animation.
+See <a href="https://github.com/Marchuck/BottomBar/blob/feature/striped_tabs/app/src/main/java/com/example/bottombar/sample/StripedTabsActivity.java">StripedTabsActivity</a> to see this customization in action!</p>
+
+<p>Here’s the result:</p>
+
+<p><img src="https://github.com/Marchuck/marchuck.github.io/blob/master/assets/nov/bottom_bar_stripes.gif" width="30%" /></p>
+
+<p>Do you like this? Don’t forget to star or fork :)</p>
+
+<p>Check out <code class="highlighter-rouge">feature/striped_tabs</code> branch <a href="https://github.com/Marchuck/BottomBar">here</a></p>
+
+</div>
+
+
+</div>
+
+  <footer>
+   <ul>
+   <li><a href="mailto:marczak.b2b@gmail.com">email</a></li>
+   <li><a href="https://github.com/Marchuck">github.com/Marchuck</a></li>
+   </ul>
+  </footer>
+  </body>
+
+</html>

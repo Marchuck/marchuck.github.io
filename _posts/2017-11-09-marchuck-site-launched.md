@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Marchuck, Launches Site"
+title: "Marchuck Launches Site"
 date: 2017-11-09
 ---
 

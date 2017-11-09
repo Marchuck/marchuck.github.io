@@ -1,7 +1,16 @@
 ---
 layout: post
-title: "Marchuck, Striped BottomBar"
+title: "Android BottomBar with stripes"
 date: 2017-11-09
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Well. Recently I was asked to design bottom navigation on Android. However it smells like iOS pattern, I quickly found cool library for my use-case
+ <link href="https://github.com/roughike/BottomBar">BottomBar</link>
+
+
+
+
+Here's result:
+
+
+<img src="https://raw.githubusercontent.com/roughike/BottomBar/master/graphics/shy-demo.gif" width="30%" />
